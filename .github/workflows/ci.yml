@@ -10,6 +10,16 @@ env:
   PR_ARTIFACT_FILE: "${{ github.event.pull_request.number }}.txt"
 
 jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        shell: bash
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
+
   install-deps:
     if: ${{ github.event.action != 'edited' }}
     name: Install dependencies
@@ -81,7 +91,7 @@ jobs:
           retention-days: 14
 
   successful_artifact:
-    if: ${{ github.event.action == 'edited' }}
+    if: ${{ github.event.action == 'edited' && github.event.sender.login != 'renovate[bot]' }}
     runs-on: ubuntu-latest
     name: 'Check if should mark as succeeded'
     outputs:
@@ -105,7 +115,7 @@ jobs:
         run: echo "${{ steps.artifact-read.outputs.content }}"
 
   task_completed:
-    if: ${{ needs.successful_artifact.outputs.should_run }}
+    if: ${{ needs.successful_artifact.outputs.should_run && github.event.sender.login != 'renovate[bot]'  }}
     needs: successful_artifact
     name: 'Check if all tasks completed'
     runs-on: ubuntu-latest
