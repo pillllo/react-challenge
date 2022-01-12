@@ -109,7 +109,7 @@ theme = createTheme(theme, {
     MuiCheckbox: {
       styleOverrides: {
         root: {
-          color: '#33333325',
+          color: '#33333350',
         },
       },
     },
@@ -127,6 +127,7 @@ theme = createTheme(theme, {
       styleOverrides: {
         root: {
           padding: '0',
+          fontSize: '24px',
         },
       },
     },

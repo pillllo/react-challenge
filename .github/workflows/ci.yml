@@ -10,16 +10,6 @@ env:
   PR_ARTIFACT_FILE: "${{ github.event.pull_request.number }}.txt"
 
 jobs:
-  echo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo
-        shell: bash
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: |
-          echo "$GITHUB_CONTEXT"
-
   install-deps:
     if: ${{ github.event.action != 'edited' }}
     name: Install dependencies
@@ -76,7 +66,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install: false
-          record: false
+          video: false
           start: npm run start:ci
           wait-on: "http://localhost:3000, http://localhost:4320/swagger/"
         env:

@@ -1,5 +1,5 @@
-## Opis
-To repozytorium zawierającym kod do Wyzwania React Dare IT.
+# Opis
+To repozytorium zawierające kod do Wyzwania React Dare IT.
 Informajce na temat zadań oraz tego jak rozpocząć pracę nad nimi będziesz otrzymywać mailowo.
 
 # Dokumentacja
@@ -16,9 +16,8 @@ znajdując się w katalogu głównym repozytorium react-challenge, uruchom termi
 ![Matrix terminal image](https://w0tt.files.wordpress.com/2011/06/matrix.gif?w=613&zoom=2)
 
 
-a tak naprawdę tak ⏳ dodatkowo instalacja może zająć trochę czasu ⏳
+a tak naprawdę tak 
 
-Zwróć uwagę na `[install:client]` oraz `[install:server]`. Jednocześnie przebiega instalacja dla dwóch aplikacji - client, to tam będą wykonywane zadania oraz server, który będzie zasilał apkę front-endową danymi.
 ```
  adrianaolszak@Admins-MacBook-Pro > ~/WebstormProjects/non-work/dareit/react-challenge > npm i
 
@@ -35,11 +34,13 @@ Zwróć uwagę na `[install:client]` oraz `[install:server]`. Jednocześnie prze
 [install:server] 
 
 ```
+⏳ instalacja może zająć trochę czasu ⏳
+
+Zwróć uwagę na `[install:client]` oraz `[install:server]`, jednocześnie przebiega instalacja dla dwóch aplikacji - client, to tam będą wykonywane zadania oraz server, który będzie zasilał apkę front-endową danymi.
 
 Jeżeli wszystko ukończyło się pomyślnie process w terminalu się zakończy.
 
 Jeżeli coś będzie nie tak konsola na pewno poinformuje Cię o tym dużym błędem ;)
-
 
 ## 🏃 Uruchomienie aplikacji
 
