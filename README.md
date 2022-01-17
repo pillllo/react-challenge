@@ -2,7 +2,7 @@
 To repozytorium zawierające kod do Wyzwania React Dare IT.
 Informajce na temat zadań oraz tego jak rozpocząć pracę nad nimi będziesz otrzymywać mailowo.
 
-# Dokumentacja
+# Pierwsze kroki
 
 ## 🧰 Instalacja pakietów NPM
 
@@ -73,3 +73,11 @@ Aby uruchomić testy należy, uruchomić clienta i serwer (może być to ten sam
     npm run cypress:open
 
 To polecenie uruchomi panel Cypress, w którym możesz uruchomić wszystkie lub wybrane testy.
+
+# FAQ
+
+## Jak dodać nowy pakiet npm?
+Uruchom terminal, przejdź do katalogu `/client` oraz wpisz polecenie `npm i :nazwa-pakietu`
+
+## Co zrobić jeśli mam problem który nie został opisany w tej sekcji?
+Skorzystaj z dotępnej społeczności na dareit.circle.so i napisz Post. Mentorki lub inni uczestnicy napewno Ci pomogą.
