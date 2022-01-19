@@ -60,9 +60,21 @@ Komenda ta uruchomi 2 aplikacje które będą dostępne pod następującymi adre
 - server - aplikacja backendowa - http://localhost:4320
     - dokumentacja API jest dostępna pod adresem http://localhost:4320/swagger
 
+### Storybook
+Do niektórych zadań będziesz potrzebować dodatkowej aplikacji - Storybook, która umożliwi Ci pracę nad niektórymi zadaniami. Treść zadania będzie wskazywać na potrzebę jej użycia.
+
+Storybook służy do pracy nad komponentami w izolacji. Jeżeli chcesz nanosić zmiany w wyglądzie lub funkcjonowaniu poszczególnych komponentów muszisz edytować odpowiadajce im pliki w katalogu `client/src/ui`.
+
+Aby uruchomić storybook należy wywołać następującą komendę znajdując się w katalogu głównym Twojego repozytorium:
+```bash
+npm run storybook
+```
+
+Komenda ta uruchomi aplikację Storybook, która będzie dostępna pod adresem http://localhost:6006
+
 ## 🏃 Uruchomienie testów automatycznych
 
-Każde zadanie będzie udostepnione z wachlarzem testów automatycznych typu e2e. Pozwala to nam na automatyczne sprawdzenie czy zadanie zostało wykonane poprawnie, a także służy Ci za informacje na temat Twojego progresu.
+Każde zadanie (wyłączając 1) będzie udostepnione z wachlarzem testów automatycznych typu e2e. Pozwala to nam na automatyczne sprawdzenie czy zadanie zostało wykonane poprawnie, a także służy Ci za informacje na temat Twojego progresu.
 
 Testy Automatyczne możesz i jest to wskazane, uruchomić lokalnie. Ten sam zestaw testów będzie również uruchamiany po przesłaniu Twojego rozwiązania do serwisu GitHub.
 
