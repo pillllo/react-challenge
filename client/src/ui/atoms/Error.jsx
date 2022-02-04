@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import imageNoContent from '../../assets/no_content.png';
 
 export const Error = ({ error }) => {
   return (
@@ -12,7 +13,9 @@ export const Error = ({ error }) => {
     >
       {
         error?.message?.includes('Network Error') ? (
-          <Typography>Uruchom Server!</Typography>
+          <Typography>
+            Uruchom Server! <img src={imageNoContent} alt="" />
+          </Typography>
         ) : null //  TODO in TASK 1
       }
     </Box>

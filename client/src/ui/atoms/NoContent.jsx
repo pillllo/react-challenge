@@ -1,3 +1,10 @@
+import imageNoContent from '../../assets/no_content.png';
+
 export const NoContent = () => {
-  return null;
+  return (
+    <>
+      <img src={imageNoContent} alt="" />
+      <p>No data to display</p>
+    </>
+  );
 };
